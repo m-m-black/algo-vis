@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>slider_sandbox</title>
+
+	<script src="libraries/p5.js"></script>
+	<script src="libraries/p5.dom.js"></script>
+	<script src="libraries/p5.sound.js"></script>
+	<script src="sketch.js"></script>
+	<script src="slider.js"></script>
+	<script src="selector.js"></script>
+	<script src="square.js"></script>
+	<script src="circle.js"></script>
+	<script src="triangle.js"></script>
+
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+		}
+
+		canvas {
+			margin: auto;
+		}
+
+		input[type=range] {
+			height: 26px;
+			-webkit-appearance: none;
+			margin: 10px 0;
+			width: 50%;
+		}
+
+		input[type=range]:focus {
+			outline: none;
+		}
+
+		input[type=range]::-webkit-slider-runnable-track {
+			width: 100%;
+			height: 13px;
+			cursor: pointer;
+			animate: 0.2s;
+			box-shadow: 0px 0px 0px #000000;
+			background: #AC51B5;
+			border-radius: 25px;
+			border: 0px solid #000101;
+		}
+
+		input[type=range]::-webkit-slider-thumb {
+			box-shadow: 0px 0px 0px #000000;
+			border: 0px solid #000000;
+			height: 20px;
+			width: 39px;
+			border-radius: 7px;
+			background: #65001C;
+			cursor: pointer;
+			-webkit-appearance: none;
+			margin-top: -3.5px;
+		}
+
+		input[type=range]:focus::-webkit-slider-runnable-track {
+			background: #AC51B5;
+		}
+
+		input[type=range]::-moz-range-track {
+			width: 100%;
+			height: 13px;
+			cursor: pointer;
+			animate: 0.2s;
+			box-shadow: 0px 0px 0px #000000;
+			background: #AC51B5;
+			border-radius: 25px;
+			border: 0px solid #000101;
+		}
+
+		input[type=range]::-moz-range-thumb {
+			box-shadow: 0px 0px 0px #000000;
+			border: 0px solid #000000;
+			height: 20px;
+			width: 39px;
+			border-radius: 7px;
+			background: #65001C;
+			cursor: pointer;
+		}
+
+		input[type=range]::-ms-track {
+			width: 100%;
+			height: 13px;
+			cursor: pointer;
+			animate: 0.2s;
+			background: transparent;
+			border-color: transparent;
+			color: transparent;
+		}
+
+		input[type=range]::-ms-fill-lower {
+			background: #AC51B5;
+			border: 0px solid #000101;
+			border-radius: 50px;
+			box-shadow: 0px 0px 0px #000000;
+		}
+
+		input[type=range]::-ms-fill-upper {
+			background: #AC51B5;
+			border: 0px solid #000101;
+			border-radius: 50px;
+			box-shadow: 0px 0px 0px #000000;
+		}
+
+		input[type=range]::-ms-thumb {
+			margin-top: 1px;
+			box-shadow: 0px 0px 0px #000000;
+			border: 0px solid #000000;
+			height: 20px;
+			width: 39px;
+			border-radius: 7px;
+			background: #65001C;
+			cursor: pointer;
+		}
+
+		input[type=range]:focus::-ms-fill-lower {
+			background: #AC51B5;
+		}
+
+		input[type=range]:focus::-ms-fill-upper {
+			background: #AC51B5;
+		}
+	</style>
+</head>
+
+<body>
+</body>
+
+</html>
